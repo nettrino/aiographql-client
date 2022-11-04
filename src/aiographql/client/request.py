@@ -47,7 +47,8 @@ class GraphQLRequest:
         if isinstance(value, bool):
             return int(value)
         if isinstance(value, dict):
-            breakpoint()
+            print(value)
+            print(json.dumps(value))
             return json.dumps(value)
         return value
 
